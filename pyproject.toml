@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "bark"
+version = "1.0"
+description = "python app for managin bookmarks. Was created for demonstrating knowlage of python, undestanding OOP concepts."
+authors = ["Rhim967 <rakhim.199206@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
