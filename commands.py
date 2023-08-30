@@ -34,6 +34,12 @@ def get_new_bookmark_data():
 def get_bookmark_id_for_delition():
     return get_user_input('enter a bookmark id for delete')
 
+def get_github_stars():
+    return {
+            'username':get_user_input('type your github username'),
+            'preserve_timestamp' : get_user_input('want you keep created time? [y/n]') in {'y', 'Y', None}
+            }
+
 def clear_screen():
     clear = 'cls' if os.name == 'nt' else 'clear'
     os.system(clear)

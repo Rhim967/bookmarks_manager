@@ -37,6 +37,8 @@ options = collections.OrderedDict({
         commands.ListBookmarksCommand(order_by='title')),
     'D' : Option('Delete bookmark', commands.DeleteBookmarksCommand(), 
         prep_call=commands.get_bookmark_id_for_delition),
+    'G' : Option('Save github stars', commands.ImportGithubStars(), 
+        prep_call=commands.get_github_stars),
     #'S' : Option('search bookmark', commands.ListBookmarksCommand(criteria={'title':'dsf'})),
     'Q' : Option('Exit', commands.QuitCommand()),
     })
